@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+
+class MailScreen extends StatefulWidget {
+  const MailScreen({super.key});
+
+  @override
+  State<MailScreen> createState() => _MailScreenState();
+}
+
+class _MailScreenState extends State<MailScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Text(
+          'Mail Screen',
+          style: TextStyle(
+            fontSize: (MediaQuery.of(context).size.width * 0.05).clamp(
+              18.0,
+              24.0,
+            ),
+            fontWeight: FontWeight.bold,
+          ),
+          overflow: TextOverflow.ellipsis,
+        ),
+      ),
+    );
+  }
+}
